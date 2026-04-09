@@ -1,0 +1,14 @@
+{
+    "global": {
+        "sitename": "CodexFlow",
+        "sitedescription": "Just some more documnetaion software",
+        "MDfilesLocation": "/md",
+        "background-color": "#121212",
+        "menubar-color": "#191919",
+        "sidebar-color": "#191919",
+        "github-link": "https://github.com/thepugmaker/CodexFlow"
+    },
+    "homepage": {
+        "view-docs-button-text": "Get Started"
+    }
+}

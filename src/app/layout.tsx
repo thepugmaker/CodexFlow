@@ -13,9 +13,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+import config from "./common/ConfigReader";
+
 export const metadata: Metadata = {
-  title: "CodexFlow",
-  description: "CodexFlow the great documnetaion software",
+  title: config.global.sitename,
+  description: config.global.sitedescription,
 };
 
 export default function RootLayout({

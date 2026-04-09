@@ -1,16 +1,29 @@
-import Image from "next/image";
+import Menubar from "./components/Menubar";
+
+import config from "./common/ConfigReader";
+
+// This is the home page on / so this is just index
 
 export default function Home() {
   return (
-    <div>
-      <div className="h-screen w-72 bg-white border-2 border-black justify-items-center rounded-tr-xl shadow-xl">
-        <h3 className="text-black font-medium mt-2">
-          CodexFlow
-        </h3>
-        <p className="text-black font-medium mt-2 ml-2 justify-self-start">
-          Pages
-        </p>
-      </div>
+    <div 
+      style={{ backgroundColor: config.global["background-color"] }}
+      className="h-screen w-screen flex flex-col justify-center items-center"
+    >
+      <Menubar></Menubar> 
+
+      <h3 className="text-white font-extrabold text-3xl mb-4">
+        {config.global.sitename}
+      </h3>
+
+      <a 
+        className="rounded-lg bg-teal-300 p-2 pl-4 pr-4 scale-100 ease-in-out duration-200 hover:bg-teal-500 hover:scale-110" 
+        href="/doc" 
+        target="_parent" 
+        rel="noreferrer"
+      >
+        {config.homepage["view-docs-button-text"]}
+      </a>
     </div>
   );
 }
