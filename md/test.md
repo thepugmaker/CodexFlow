@@ -37,9 +37,7 @@ or even use this README as a guide, As this is the main way I've tested.
 - [ ] Read all the MDs in /md or the folder in config.json
 - [ ] Add copying code a feature on the markdown
 - [ ] Make a system for changing MDs and reading different ones
-- [ ] List.json parse and remembering
 - [ ] Make sidebar for all the MDs
-- [ ] Next page in List.json
 - [ ] Fix some markdown issues
 - [ ] Make displaying sidebar have a custom way of showing
 - [ ] More config options
@@ -89,3 +87,19 @@ bun start
 ```
 
 **I haven't tested yarn, pnpm, or bun at this point only npm**
+
+
+| First Header  | Second Header | 3 Header |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | con |
+| Content Cell  | Content Cell  | con |
+
+
+**test** <br>
+*TEST*
+# test
+## test
+### test
+#### test
+##### test
+###### test
