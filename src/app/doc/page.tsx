@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import fs from "fs";
 import path from "path";
 import MarkdownViewer from "./MarkdownViewer";
@@ -26,6 +28,8 @@ export default async function Home({
   const filePath = path.join(process.cwd(), "md", safeFile);
 
   let markdown = "# File not found";
+
+// TODO: Fix the try and catch to not error cause it doesn't exist when we know it doesnt exist
 
   try {
     markdown = fs.readFileSync(filePath, "utf8");

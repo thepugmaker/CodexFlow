@@ -1,8 +1,8 @@
 # CodexFlow
 ### **Another documentation software** 
-*Entirely build in Typescript*
+*Entirely built in Typescript*
 
-![GitHub Release](https://img.shields.io/github/v/release/thepugmaker/CodexFlow)
+![GitHub Release](https://img.shields.io/github/v/release/thepugmaker/CodexFlow?include_prereleases)
 
 **Why use this over anything else?** <br>
 It's just git cloning, then drag and dropping, and then changing a few lines of config code <br>
@@ -42,7 +42,7 @@ or even use this README as a guide, As this is the main way I've tested.
 - [ ] Add date edited
 - [ ] Search
 - [ ] Mutiple Docs in one site
-- [ ] Categories
+- [ ] Categories 
 
 ## Plans/TODO for future
 *This is not in order* <br>
