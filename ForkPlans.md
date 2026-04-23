@@ -30,6 +30,14 @@ example code
 ```
 This would create 3 different blocks the user can select
 
+Add date edited <br>
+Example on how that works
+```markdown
+$$$DateEdited=04-22-2026
+```
+That's how it'd work in MM/DD/YYYY format
 
 This fork is planned to only be used on CodexFlow but it will be it's own repo once I start working on it.
 My fork will be MIT like the react-markdown project is already.
+
+Some of these might just be in the custom reader depends

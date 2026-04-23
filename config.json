@@ -1,14 +1,22 @@
 {
     "global": {
         "sitename": "CodexFlow",
-        "sitedescription": "Just some more documnetaion software",
-        "MDfilesLocation": "/md",
+        "sitedescription": "Just some more documentation software", 
         "background-color": "#121212",
         "menubar-color": "#191919",
         "sidebar-color": "#191919",
-        "github-link": "https://github.com/thepugmaker/CodexFlow"
+        "github-link": "https://github.com/thepugmaker/CodexFlow",
+        "should-github-stuff": true
     },
     "homepage": {
         "view-docs-button-text": "Get Started"
+    },
+    "logging": {
+        "logging-name": "CodexFlow",
+        "should-log": true
+    },
+    "markdown": {
+        "md-files-location": "/md",
+        "list-json-location": "/md/list.json"
     }
 }

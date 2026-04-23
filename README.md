@@ -1,7 +1,8 @@
 # CodexFlow
 ### **Another documentation software** 
+*Entirely build in Typescript*
 
-**Version -> 1.0.0**
+![GitHub Release](https://img.shields.io/github/v/release/thepugmaker/CodexFlow)
 
 **Why use this over anything else?** <br>
 It's just git cloning, then drag and dropping, and then changing a few lines of config code <br>
@@ -19,9 +20,11 @@ git clone https://github.com/thepugmaker/CodexFlow.git
 cd CodexFlow
 npm install
 ```
+or you could <br>
+Download the source code to the latest stable build, That source code will be in releases on Github.
 
 ## What libraries and frameworks?
-##### Here's the list 
+### Here's the list  
 - [Next JS app router](https://nextjs.org/)
 - [React JS](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
@@ -33,22 +36,20 @@ Like any other markdown! <br>
 Please check out [react-markdown](https://remarkjs.github.io/react-markdown/)'s way of creating markdown as their the library that runs this website. <br>
 or even use this README as a guide, As this is the main way I've tested.
 
-## Current TODO list in order
-- [ ] Read all the MDs in /md or the folder in config.json
-- [ ] Add copying code a feature on the markdown
-- [ ] Make a system for changing MDs and reading different ones
-- [ ] List.json parse and remembering
-- [ ] Make sidebar for all the MDs
-- [ ] Next page in List.json
-- [ ] Fix some markdown issues
-- [ ] Make displaying sidebar have a custom way of showing
-- [ ] More config options
+## TODO list
+- [ ] Logo
+- [ ] Move on to next page in list
+- [ ] Add date edited
+- [ ] Search
+- [ ] Mutiple Docs in one site
+- [ ] Categories
 
-## Plans for future
+## Plans/TODO for future
 *This is not in order* <br>
 - [ ] Fork react-markdown and add features to help CodexFlow (Fork Plans)
 - [ ] Better config editing
 - [ ] Everything can be changed in the one config.json
+- [ ] Fix for mutiple devices
 
 I plan to start the fork after I release the first version of this.
 

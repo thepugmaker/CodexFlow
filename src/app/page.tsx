@@ -16,6 +16,8 @@ export default function Home() {
         {config.global.sitename}
       </h3>
 
+      <span className="mb-4 font-bold text-xl text-white">{config.global.sitedescription}</span>
+
       <a 
         className="rounded-lg bg-teal-300 p-2 pl-4 pr-4 scale-100 ease-in-out duration-200 hover:bg-teal-500 hover:scale-110" 
         href="/doc" 

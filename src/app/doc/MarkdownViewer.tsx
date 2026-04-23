@@ -19,8 +19,6 @@ export default function MarkdownViewer({ markdown }: { markdown: string }) {
       style={{ backgroundColor: config.global["background-color"] }}
       className="h-screen w-screen flex overflow-hidden"
     >
-      <Menubar />
-
       <div className="flex-1 overflow-y-auto overflow-x-hidden pt-16 px-6">
         <div className="max-w-4xl mx-auto break-words">
           <Markdown

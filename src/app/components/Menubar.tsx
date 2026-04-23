@@ -13,14 +13,16 @@ export default function Menubar()
                 config.global.sitename}
             </a>
 
-            <a 
-                className="invert absolute right-2 top-3 rounded-full scale-100 hover:scale-110 transition-all ease-in-out duration-200"
-                href={`${config.global["github-link"]}`} 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <img className="h-8 w-8" src="/octicons-mark-github.svg"></img>
-            </a>
+            {config.global["should-github-stuff"] && (
+                <a 
+                    className="invert absolute right-2 top-3 rounded-full scale-100 hover:scale-110 transition-all ease-in-out duration-200"
+                    href={config.global["github-link"]}
+                    target="_blank" 
+                    rel="noreferrer"
+                >
+                    <img className="h-8 w-8" src="/octicons-mark-github.svg" />
+                </a>
+            )}
         </div>
     )
 }
