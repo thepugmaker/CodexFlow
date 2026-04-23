@@ -28,6 +28,9 @@ First of all you need how know what they all mean
         "md-files-location": "/md", // Location to docs
         "list-json-location": "/md/list.json" // Location to list of docs 
         // Nether of these work currently
+    },
+    "docs": { // Stuff related to /doc page
+        "index-md": "Introduction.md" // Name of your index where the landing of the docs is, you can show this in list.json or not. Must have .md at end.
     }
 }
 ```

@@ -12,6 +12,8 @@ export default function Home() {
     >
       <Menubar></Menubar> 
 
+      {/* Add logo here when I make a logo plus implement logos */}
+
       <h3 className="text-white font-extrabold text-3xl mb-4">
         {config.global.sitename}
       </h3>
@@ -20,7 +22,7 @@ export default function Home() {
 
       <a 
         className="rounded-lg bg-teal-300 p-2 pl-4 pr-4 scale-100 ease-in-out duration-200 hover:bg-teal-500 hover:scale-110" 
-        href="/doc" 
+        href={`/doc?md=` + config.docs["index-md"]}
         target="_parent" 
         rel="noreferrer"
       >

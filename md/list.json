@@ -1,8 +1,9 @@
 {
     "List": [
-        "index.md",
+        "Introduction.md",
         "Setup.md",
         "How to Config.md",
-        "Writing Markdown.md"
+        "Writing Markdown.md",
+        "Configure the Markdown.md"
     ]
 }

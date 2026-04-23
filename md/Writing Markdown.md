@@ -7,6 +7,11 @@ https://remarkjs.github.io/react-markdown/ <br>
 ###### We also use rehype-raw, and remark-gfm for rendering <br>
 
 ### Example of some markdown <br>
+[This exact page](https://github.com/thepugmaker/CodexFlow/blob/main/md/Writing%20Markdown.md)
+<br>
+
+---
+
 ###### This isn't the true README.md this could be old or wrong or missing info go check the real README.md at the root of this project
 ```markdown 
 # CodexFlow
@@ -216,11 +221,7 @@ Footnote 1 link[^first].
 
 Footnote 2 link[^second].
 
-___
-
 ---
-
-***
 
 ### Helpful sources to know what was wrong <br>
 - https://markdown-it.github.io/

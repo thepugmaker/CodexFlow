@@ -6,6 +6,7 @@ import MarkdownViewer from "./MarkdownViewer";
 import list from "../../../md/list.json";
 import Menubar from "../components/Menubar";
 import Sidebar from "../components/Sidebar";
+import config from "../common/ConfigReader";
 
 export default async function Home({
   searchParams,
@@ -13,8 +14,8 @@ export default async function Home({
   searchParams: Promise<{ md?: string }>;
 }) {
   const params = await searchParams;
-
-  const selectedFileRaw = params.md || "index.md";
+// Error handle for index-md being incorrect
+  const selectedFileRaw = params.md || config.docs["index-md"];
 
   const selectedFile = decodeURIComponent(selectedFileRaw)
     .trim()
@@ -23,7 +24,7 @@ export default async function Home({
   const safeFile =
     list.List.find(
       (file) => file.trim().toLowerCase() === selectedFile
-    ) || "index.md";
+    ) || config.docs["index-md"];
 
   const filePath = path.join(process.cwd(), "md", safeFile);
 

@@ -6,11 +6,10 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/thepugmaker/CodexFlow)
 
 **Why use this over anything else?** <br>
-It's just git cloning, then drag and dropping, and then changing a few lines of config code <br>
-and it's simple to change everything is either its own component or page, <br>
-I'm aiming to make the documentation source super easy to edit. <br>
-Already made for you, this is public anyone can use this which means <br>
-you don't have to make it yourself or use a different service thats heavier or more complex <br>
+1. Is it very quick to download and start making docs and it's simple to change everything is weather its own component or page. <br>
+2. Very simple to edit into your own documentation. <br>
+3. This is documentation software made for anyone, it's lightweight and simple despite being featureful. <br>
+4. One unified language, Typescript (With a little Javascript, CSS, and JSON for configs) so if you understand Typescript using this documentation software will be no problem. 
 
 ## How to use
 You put your markdown docs in /md and it will auto load everything on it's own. <br>
@@ -40,17 +39,21 @@ Please check out [react-markdown](https://remarkjs.github.io/react-markdown/)'s 
 or even use this README as a guide, As this is the main way I've tested.
 
 ## TODO list
+*Not in order* <br>
+*Once these are finished plus finally polish is done then v1.0.0 can be released* <br>
 - [ ] Logo
-- [ ] Move on to next page in list
+- [ ] Move on to next page in list button
 - [ ] Add date edited
 - [ ] Search
 - [ ] Mutiple Docs in one site
 - [ ] Categories 
-
-## Plans/TODO for future
-*This is not in order* <br>
-- [ ] Fork react-markdown and add features to help CodexFlow (Fork Plans)
-- [ ] Better config editing
+- [ ] Select one page in the selceted category in category page
+- [ ] Add Opengraph api
+- [ ] Syntax highlighting 
+- [ ] Dark and Light mode switching
+- [ ] Fork react-markdown and add features to help CodexFlow (Fork Plans) or improve the viewer script 
+- [ ] Better config for anything
+- [ ] Error handles for config part not existing or being wrong
 - [ ] Everything can be changed in the one config.json
 - [ ] Fix for mutiple devices
 

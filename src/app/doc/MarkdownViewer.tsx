@@ -85,6 +85,10 @@ export default function MarkdownViewer({ markdown }: { markdown: string }) {
                 <li className="mb-1 text-gray-300">{children}</li>
               ),
 
+              hr: ({ children }) => (
+                <hr className="mb-2 border-white border-t-2">{children}</hr>
+              ),
+
               code({ className, children, node }) {
                 const match = /language-(\w+)/.exec(className || "");
                 const language = match?.[1];

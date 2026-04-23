@@ -4,3 +4,7 @@
   --background: rgb(0, 0, 0);
   --foreground: #171717;
 }
+
+body {
+  font-family: var(--font-noto-serif), serif;
+}

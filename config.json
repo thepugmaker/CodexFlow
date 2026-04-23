@@ -18,5 +18,8 @@
     "markdown": {
         "md-files-location": "/md",
         "list-json-location": "/md/list.json"
+    },
+    "docs": {
+        "index-md": "Introduction.md"
     }
 }

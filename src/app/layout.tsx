@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Noto_Serif } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -10,7 +11,12 @@ const geistSans = localFont({
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
-  weight: "100 900",
+  weight: "100 900",  
+});
+const notoSerif = Noto_Serif({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-noto-serif",
 });
 
 import config from "./common/ConfigReader";
