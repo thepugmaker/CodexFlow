@@ -2,12 +2,15 @@
 ### **Another documentation software** 
 *Entirely built in Typescript*
 
-![GitHub Release](https://img.shields.io/github/v/release/thepugmaker/CodexFlow?include_prereleases)
+![GitHub Release](https://img.shields.io/github/v/release/thepugmaker/CodexFlow?include_prereleases) 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/thepugmaker/CodexFlow)
 
 **Why use this over anything else?** <br>
 It's just git cloning, then drag and dropping, and then changing a few lines of config code <br>
 and it's simple to change everything is either its own component or page, <br>
 I'm aiming to make the documentation source super easy to edit. <br>
+Already made for you, this is public anyone can use this which means <br>
+you don't have to make it yourself or use a different service thats heavier or more complex <br>
 
 ## How to use
 You put your markdown docs in /md and it will auto load everything on it's own. <br>

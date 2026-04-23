@@ -18,7 +18,7 @@ First of all you need how know what they all mean
         "should-github-stuff": true // Shows the stuff to access the Github repo or other parts of the Github relating to the Github Link you put in
     },
     "homepage": { // Only homepage
-        "view-docs-button-text": "Get Started" //
+        "view-docs-button-text": "Get Started" // Button on home page text
     },
     "logging": { // For console.log if any
         "logging-name": "CodexFlow", // Who made the logs?
@@ -31,4 +31,11 @@ First of all you need how know what they all mean
     }
 }
 ```
-Now you know how the config works. <br>
+Now you know how the config works you can start changing it. <br>
+First things you should change are
+- sitename <br>
+- sitedescription <br>
+- github_link <br>
+
+### But where is the config at? <br>
+In the root of the project and named as **config.json**
