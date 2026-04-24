@@ -33,7 +33,7 @@ This would create 3 different blocks the user can select
 Add date edited <br>
 Example on how that works
 ```markdown
-$$$DateEdited=04-22-2026
+$C=DateEdited'04-22-2026'
 ```
 That's how it'd work in MM/DD/YYYY format
 

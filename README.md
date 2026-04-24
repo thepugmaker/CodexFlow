@@ -35,31 +35,66 @@ Download the source code to the latest stable build, That source code will be in
 
 ## How do I create markdown for this?
 Like any other markdown! <br>
-Please check out [react-markdown](https://remarkjs.github.io/react-markdown/)'s way of creating markdown as their the library that runs this website. <br>
-or even use this README as a guide, As this is the main way I've tested.
+Or even check our (documentation)[https://codexflow.mrpugpug.com/doc?md=Writing%20Markdown.md] for it 
 
 ## TODO list
 *Not in order* <br>
-*Once these are finished plus finally polish is done then v1.0.0 can be released* <br>
-- [ ] Logo
-- [ ] Move on to next page in list button
-- [ ] Add date edited
-- [ ] Search
-- [ ] Mutiple Docs in one site
-- [ ] Categories 
-- [ ] Select one page in the selceted category in category page
-- [ ] Add Opengraph api
-- [ ] Syntax highlighting 
-- [ ] Dark and Light mode switching
-- [ ] Fork react-markdown and add features to help CodexFlow (Fork Plans) or improve the viewer script 
-- [ ] Better config for anything
-- [ ] Error handles for config part not existing or being wrong
-- [ ] Everything can be changed in the one config.json
-- [ ] Fix for mutiple devices
+*Once this todo list is finished and polish is finished then v1.0.0 can be released* <br>
+- [ ] Logo <br>
+    - Make favicon this logo <br>
+- [ ] Move on to next page/category in list button <br>
+- [ ] Add date edited <br>
+    - In menu bar when in docs and selected md <br>
+    - use a prefix like $C=cmdorotherthing <br>
+- [ ] Search <br>
+    - Search for headings in all docs <br>
+- [ ] Mutiple Docs in one site <br>
+    - Seperated by folders in md folder <br>
+    - Allows like Docs, API, CDN, etc <br>
+- [ ] Categories <br>
+    - Like category with subdocs
+```
+List for docs can be like
+{
+    "List": {
+        "guidecategory": [
+            "Introduction.md",
+            "Setup.md",
+            "How to Config.md",
+            "Writing Markdown.md",
+            "Configure the Markdown.md"
+        ],
+        "example": [
+            "example.md",
+            "you get it at this point.md"
+        ]
+    }
+}
+```
+- [ ] Select one page in the selceted category in category page <br>
+    - Kinda like this https://docusaurus.io/docs/category/getting-started 
+- [ ] Add Opengraph api <br>
+    - Metadata for social sites in layout.tsx <br>
+- [ ] Syntax highlighting <br>
+    - Code blocks get syntax higlighting <br>
+- [ ] Dark and Light mode switching <br>
+    - Allows you to switch the docs between light and dark or set it to auto where the user then picks light or dark by choice giving <br>
+- [ ] Fork react-markdown and add features to help CodexFlow (Fork Plans) or improve the viewer script <br>
+    - The fork might happen but probably not unless I need to change something within it for parsing, I'll either add more to the MarkdownViewer.tsx or build a custom parser to add onto react-markdown <br>
+- [ ] Make everything configurable <br>
+    - Everything should be allowed to get changed by choice in config.json <br>
+- [ ] Error handles for config part not existing or being wrong <br>
+    - Handling developer errors + user errors in a safe way <br>
+- [ ] Fix for mutiple devices <br>
+    - Add mutiple device setup to fix sidebar, menubar, viewer, etc <br>
+- [ ] Generate a static site <br>
+    - Make this generate a static site so things like Github Pages work with these docs <br>
+- [ ] Quickly switch to heading <br>
+    - Focus on a certain heading and it's content <br>
 
-I plan to start the fork after I release the first version of this.
+I plan to start the fork after I do some of this to do list
 
-Fork plans are gonna be in their own ForkPlans.md
+Fork plans/Addon are gonna be in their own ForkPlans.md 
 
 ## Common Issues
 - empty
@@ -81,6 +116,7 @@ bun dev
 ```
 
 or Run the production server:
+
 ```bash
 npm run build
 npm run start

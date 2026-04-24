@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import MarkdownViewer from "./MarkdownViewer";
 import list from "../../../md/list.json";
-import Menubar from "../components/Menubar";
+import Menubar from "../components/DocsMenubar";
 import Sidebar from "../components/Sidebar";
 import config from "../common/ConfigReader";
 

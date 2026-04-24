@@ -2,24 +2,59 @@
     "global": {
         "sitename": "CodexFlow",
         "sitedescription": "Just some more documentation software", 
-        "background-color": "#121212",
-        "menubar-color": "#191919",
-        "sidebar-color": "#191919",
+        "logo-location": "/Logos/CodexFlowLogo-placeholder.jpeg",
         "github-link": "https://github.com/thepugmaker/CodexFlow",
         "should-github-stuff": true
     },
+    "global-colors": {
+        "text-color": "#ffffff",
+        "background-color": "#121212"
+    },
+    "global-apperance": {
+        "font": "notoSerif"
+    },
+    "menubar": {
+        "menubar-color": "#191919",
+        "show-border": false
+    },
+    "sidebar": {
+        "sidebar-color": "#191919",
+        "highlighted-doc-color": "#ffffff",
+        "hovered-unhighlighted-color": "#2a2a2a",
+        "highlighted-text-color": "#000000",
+        "show-border": false
+    },
     "homepage": {
-        "view-docs-button-text": "Get Started"
+        "view-docs-button-text": "Get Started",
+        "view-docs-button-color": "#46ecd5",
+        "view-docs-button-color-hover": "#14B8A6",
+        "view-docs-button-text-color": "#000000",
+        "show-menubar": true
     },
     "logging": {
         "logging-name": "CodexFlow",
         "should-log": true
     },
+    "docs": {
+        "index-md": "Introduction.md",
+        "show-sidebar": true,
+        "show-menubar": true,
+        "show-last-date-edited": true,
+        "show-search-bar": true
+    },
     "markdown": {
         "md-files-location": "/md",
-        "list-json-location": "/md/list.json"
+        "list-json-location": "/md/list.json",
+        "syntax-highlighting": true,
+        "hr-color": "#ffffff"
     },
-    "docs": {
-        "index-md": "Introduction.md"
+    "markdown-grays": {
+        "gray-100": "#f3f4f6",
+        "gray-200": "#e5e7eb",
+        "gray-300": "#d1d5dc",
+        "gray-400": "#99a1af",
+        "gray-500": "#6a7282",
+        "gray-600": "#4a5565",
+        "gray-700": "#364153"
     }
 }

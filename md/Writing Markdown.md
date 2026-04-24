@@ -7,7 +7,10 @@ https://remarkjs.github.io/react-markdown/ <br>
 ###### We also use rehype-raw, and remark-gfm for rendering <br>
 
 ### Example of some markdown <br>
-[This exact page](https://github.com/thepugmaker/CodexFlow/blob/main/md/Writing%20Markdown.md)
+[This exact page](https://github.com/thepugmaker/CodexFlow/blob/main/md/Writing%20Markdown.md) <br>
+
+[or all other markdown in these docs](https://github.com/thepugmaker/CodexFlow/tree/main/md) <br>
+
 <br>
 
 ---

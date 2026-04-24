@@ -1,4 +1,6 @@
-import Menubar from "./components/Menubar";
+"use client";
+
+import Menubar from "./components/LandingMenubar";
 
 import config from "./common/ConfigReader";
 
@@ -7,21 +9,41 @@ import config from "./common/ConfigReader";
 export default function Home() {
   return (
     <div 
-      style={{ backgroundColor: config.global["background-color"] }}
+      style={{ backgroundColor: config["global-colors"]["background-color"] }}
       className="h-screen w-screen flex flex-col justify-center items-center"
     >
       <Menubar></Menubar> 
 
-      {/* Add logo here when I make a logo plus implement logos */}
+      <img className="rounded-2xl h-46 w-46" src={`${config.global["logo-location"]}`} alt="logo" />
 
-      <h3 className="text-white font-extrabold text-3xl mb-4">
+      <h3 
+        style={{ color: config["global-colors"]["text-color"] }}
+        className="font-extrabold text-3xl mb-4"
+      >
         {config.global.sitename}
       </h3>
 
-      <span className="mb-4 font-bold text-xl text-white">{config.global.sitedescription}</span>
+      <span 
+        style={{
+          color: config["global-colors"]["text-color"]
+        }}
+        className="mb-4 font-bold text-xl"
+      >{config.global.sitedescription}</span>
 
       <a 
-        className="rounded-lg bg-teal-300 p-2 pl-4 pr-4 scale-100 ease-in-out duration-200 hover:bg-teal-500 hover:scale-110" 
+        style={{
+          backgroundColor: config.homepage["view-docs-button-color"],
+          color: config.homepage["view-docs-button-text-color"],
+        }}
+        onMouseEnter={(e) =>
+          (e.currentTarget.style.backgroundColor =
+            config.homepage["view-docs-button-color-hover"])
+        }
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.backgroundColor =
+            config.homepage["view-docs-button-color"])
+        }
+        className="rounded-lg p-2 pl-4 pr-4 scale-100 ease-in-out duration-200 hover:scale-110" 
         href={`/doc?md=` + config.docs["index-md"]}
         target="_parent" 
         rel="noreferrer"

@@ -9,6 +9,8 @@ cd CodexFlow
 or download the latest stable build from releases <br> 
 https://github.com/thepugmaker/CodexFlow/releases <br>
 Download the source code to the latest one. <br>
+Here's what it will look like <br>
+![Github Releases](/markdown-images/release-image.png "What it will look like")
 <br>
 Now that you have have one of these you will want to install all packages
 ```bash

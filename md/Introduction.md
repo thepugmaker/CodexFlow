@@ -1,5 +1,7 @@
 # Introducing CodexFlow
 
+*Warning if the version is not past v1.0.0 these docs might not be updated lots due to development being the main focus*
+
 ## Why use this over anything else? <br>
 1. Is it very quick to download and start making docs and it's simple to change everything is weather its own component or page. <br>
 2. Very simple to edit into your own documentation. <br>
@@ -13,7 +15,8 @@
 - [TailwindCSS](https://tailwindcss.com/)
 - [react-markdown](https://remarkjs.github.io/react-markdown/)
 - [rehype-sanitize](https://github.com/rehypejs/rehype-sanitize) <br>
-Very lightweight on purpose <br>
+
+Very lightweight documentation software on purpose <br>
 
 ## Features
 *Only ones implemented not planned* <br>
