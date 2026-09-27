@@ -1,4 +1,6 @@
-# Writing Markdown
+# Writing Markdown 
+
+*Later note: Add where to add stuff, etc*
 
 Writing the markdown here is like any other markdown for any other platform. <br>
 The markdown here allows very similar markdown to Github. <br>

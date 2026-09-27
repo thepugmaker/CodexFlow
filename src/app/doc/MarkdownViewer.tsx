@@ -6,18 +6,33 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeSanitize from "rehype-sanitize";
 import rehypeRaw from "rehype-raw";
+import Link from "next/link";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function MarkdownViewer({ markdown }: { markdown: string }) {
+export default function MarkdownViewer({
+  markdown,
+  previousFile,
+  nextFile,
+}: {
+  markdown: string;
+  previousFile: string | null;
+  nextFile: string | null;
+}) {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const scrollToTop = () => {
+    document.getElementById("markdown-content")?.scrollTo(0, 0);
+  };
 
   return (
     <div
       style={{ backgroundColor: config["global-colors"]["background-color"] }}
       className="h-screen w-screen flex overflow-hidden"
     >
-      <div className="flex-1 overflow-y-auto overflow-x-hidden pt-16 px-6">
+      <div
+        id="markdown-content"
+        className="flex-1 overflow-y-auto overflow-x-hidden pt-16 px-6"
+      >
         <div className="max-w-4xl mx-auto break-words">
           <Markdown
             remarkPlugins={[remarkGfm]}
@@ -187,6 +202,28 @@ export default function MarkdownViewer({ markdown }: { markdown: string }) {
           >
             {markdown}
           </Markdown>
+          <br />
+          <div className="flex justify-between mt-4">
+            {previousFile && (
+              <Link
+                href={`/doc?md=${encodeURIComponent(previousFile)}`}
+                className="px-4 py-2 bg-white text-black rounded hover:bg-gray-400 transition-all duration-200"
+                onClick={scrollToTop}
+              >
+                Previous
+              </Link>
+            )}
+            {nextFile && (
+              <Link
+                href={`/doc?md=${encodeURIComponent(nextFile)}`}
+                className="px-4 py-2 bg-white text-black rounded hover:bg-gray-400 transition-all duration-200"
+                onClick={scrollToTop}
+              >
+                Next
+              </Link>
+            )}
+          </div>
+          <br />
         </div>
       </div>
     </div>

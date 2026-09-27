@@ -2,16 +2,17 @@
     "global": {
         "sitename": "CodexFlow",
         "sitedescription": "Just some more documentation software", 
-        "logo-location": "/Logos/CodexFlowLogo-placeholder.jpeg",
+        "logo-dir-landing": "/Logos/CodexFlowLogo-placeholder.jpeg",
         "github-link": "https://github.com/thepugmaker/CodexFlow",
-        "should-github-stuff": true
+        "should-github-stuff": true,
+        "locale": "en_US"
     },
     "global-colors": {
         "text-color": "#ffffff",
         "background-color": "#121212"
     },
     "global-apperance": {
-        "font": "notoSerif"
+        "font": "notoSans"
     },
     "menubar": {
         "menubar-color": "#191919",

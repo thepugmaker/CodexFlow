@@ -1,15 +1,16 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import config from "../common/ConfigReader";
-import list from "../../../md/list.json";
 
-export default function Sidebar() {
-  const searchParams = useSearchParams();
-  const current =
-    decodeURIComponent(searchParams.get("md") || config.docs["index-md"]);
-
+export default function Sidebar({
+  list,
+  current,
+}: {
+  list: string[];
+  current: string;
+}) {
   return (
     <div
       className={`flex flex-col rounded-2xl mt-20 ml-4 h-[80vh] w-64 p-4 gap-2 overflow-y-auto fixed ${
@@ -20,7 +21,7 @@ export default function Sidebar() {
         "--sidebar-button": config.sidebar["hovered-unhighlighted-color"],
       } as React.CSSProperties}
     >
-      {list.List.map((file) => {
+      {list.map((file) => {
         const isActive =
           file.toLowerCase() === current.toLowerCase();
 
@@ -28,6 +29,7 @@ export default function Sidebar() {
           <Link
             key={file}
             href={`/doc?md=${encodeURIComponent(file)}`}
+            onClick={() => document.getElementById("markdown-content")?.scrollTo(0, 0)}
             className={`px-2 py-1 rounded transition-colors sidebar-item ${
               isActive ? "is-active" : ""
             }`}

@@ -21,9 +21,21 @@ const notoSerif = Noto_Serif({
 
 import config from "./common/ConfigReader";
 
+// TODO: Add config options
 export const metadata: Metadata = {
   title: config.global.sitename,
   description: config.global.sitedescription,
+  openGraph: {
+    title: config.global.sitename,
+    description: config.global.sitedescription,
+    siteName: config.global.sitename,
+    locale: config.global.locale,
+    type: "website",
+  },
+  twitter: {
+    title: config.global.sitename,
+    description: config.global.sitedescription,
+  },
 };
 
 export default function RootLayout({

@@ -14,10 +14,11 @@ export default function Home() {
     >
       <Menubar></Menubar> 
 
-      <img className="rounded-2xl h-46 w-46" src={`${config.global["logo-location"]}`} alt="logo" />
+      <img className="rounded-2xl h-46 w-46" src={`${config.global["logo-dir-landing"]}`} alt="logo" />
 
       <h3 
-        style={{ color: config["global-colors"]["text-color"] }}
+        style={{ 
+          color: config["global-colors"]["text-color"] }}
         className="font-extrabold text-3xl mb-4"
       >
         {config.global.sitename}
